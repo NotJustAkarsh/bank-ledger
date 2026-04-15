@@ -15,6 +15,10 @@ const app = express();
 /**
  * - Use Routes
  */
+
+app.get("/", (req, res)=>{
+    res.send("Ledger Service is up and running")
+})
 app.use(cookieParser())
 app.use(express.json())
 
